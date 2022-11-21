@@ -7,6 +7,7 @@ node{
     sh "${mavenHome}/bin/mvn clean package"
     //bat "${mavenHome}/bin/mvn clean package"
   }
+  /*
   stage('3codeQuality'){
     sh "${mavenHome}/bin/mvn sonar:sonar"
   }
@@ -39,4 +40,5 @@ Check Build Status
 
 TrokTech''', recipientProviders: [buildUser(), developers(), upstreamDevelopers(), brokenBuildSuspects(), brokenTestsSuspects(), contributor()], subject: 'build status', to: 'tesla-app@gmail.com'
    }
+   */
 }
